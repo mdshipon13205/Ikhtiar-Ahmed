@@ -1,0 +1,103 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap');
+
+@theme {
+  --font-sans: 'Times New Roman', Times, 'Hind Siliguri', serif;
+  --font-serif: 'Times New Roman', Times, 'Hind Siliguri', serif;
+  --font-mono: 'Times New Roman', Times, 'Hind Siliguri', serif;
+  --font-display: 'Times New Roman', Times, 'Hind Siliguri', serif;
+}
+
+@layer base {
+  :root {
+    --font-heading: 'Times New Roman', Times, 'Hind Siliguri', serif;
+    --font-body: 'Times New Roman', Times, 'Hind Siliguri', serif;
+    --font-mono: 'Times New Roman', Times, 'Hind Siliguri', serif;
+  }
+}
+
+*, *::before, *::after, html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big,
+cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong,
+sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form,
+label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside,
+canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav,
+output, ruby, section, summary, time, mark, audio, video, button, input, select,
+textarea, .font-display, .font-mono, .font-sans, .font-serif {
+  font-family: 'Times New Roman', 'Hind Siliguri', Times, serif !important;
+}
+
+/* 3D and Perspective utilities */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.perspective-1200 {
+  perspective: 1200px;
+}
+
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.translate-z-10 {
+  transform: translateZ(10px);
+}
+
+.translate-z-20 {
+  transform: translateZ(20px);
+}
+
+.translate-z-30 {
+  transform: translateZ(30px);
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #030712;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* Glow effects */
+.glow-dark-red {
+  box-shadow: 0 0 35px -5px rgba(225, 29, 72, 0.25);
+}
+
+.glow-dark-blue {
+  box-shadow: 0 0 35px -5px rgba(30, 58, 138, 0.35);
+}
+
+.glow-dual {
+  box-shadow: 0 0 40px -10px rgba(225, 29, 72, 0.2), 0 0 50px -15px rgba(37, 99, 235, 0.25);
+}
+
+/* Glassmorphism */
+.glass-panel {
+  background: rgba(15, 23, 42, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-card {
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.75) 0%, rgba(10, 15, 30, 0.85) 100%);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
